@@ -3,34 +3,59 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#fff',
-    padding: 20,
+    padding: 16,
+    backgroundColor: 'white',
   },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 30,
-  },
-  categoryButton: {
+  header: {
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 10,
-    marginVertical: 10,
-    width: '100%',
-    borderWidth: 1,
-    borderColor: '#ddd',
-    borderRadius: 5,
+    marginBottom: 16,
   },
-  categoryImage: {
-    width: 40,
-    height: 40,
-    marginRight: 10,
+  searchInput: {
+    flex: 1,
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    backgroundColor: '#f0f0f0',
+    borderRadius: 8,
+    fontSize: 16,
+    color: '#000',
   },
-  categoryText: {
-    fontSize: 18,
+  searchButton: {
+    color: '#ff3b5c',
     fontWeight: 'bold',
+    marginLeft: 8,
+  },
+  sectionTitle: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#ff3b5c',
+    marginBottom: 8,
+  },
+  suggestions: {
+    marginBottom: 16,
+  },
+  suggestionItem: {
+    fontSize: 14,
+    color: 'black',
+    marginBottom: 4,
+    fontWeight: 'bold'
+  },
+  watched: {
+    color: '#ff3b5c',
+    fontWeight: 'bold',
+  },
+  searched: {
+    color: '#ff3b5c',
+    fontWeight: 'bold',
+  },
+  popularSearches: {
+    marginBottom: 16,
+  },
+  popularItem: {
+    fontSize: 14,
+    color: 'black',
+    marginBottom: 4,
+    fontWeight: 'bold'
   },
 });
 

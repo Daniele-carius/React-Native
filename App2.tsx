@@ -1,28 +1,36 @@
 import React from 'react';
-import { View, Text, TextInput, Button } from 'react-native';
-import styles from './styles';
+import { View, Text, TextInput} from 'react-native';
+import styles from './styles2';
 
-
-const categories = [
-  { name: 'Entreterimento'},
-  { name: 'Saúde e Beleza'},
-  { name: 'Comida' },
-  { name: 'Dança'},
-];
-
-
-const Categorya = () => {
+const HomeScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Categorias</Text>
+      <View style={styles.header}>
+        <TextInput
+          style={styles.searchInput}
+          placeholder="pesquisar"
+          placeholderTextColor="black"
+        />
+        <Text style={styles.searchButton}>Procurar</Text>
+      </View>
 
-          <Button title="Entreterimento" onPress={() => {}} />
-          <Button title="Saude e Beleza" onPress={() => {}} />
-          <Button title="Comida" onPress={() => {}} />
-          <Button title="Danca" onPress={() => {}} />
-  
+      <View>
+        <Text style={styles.sectionTitle}>Você pode gostar</Text>
+        <View style={styles.suggestions}>
+          <Text style={styles.suggestionItem}>• salada </Text>
+          <Text style={styles.suggestionItem}>• comedia</Text>
+          
+        </View>
+
+        <Text style={styles.sectionTitle}>Pesquisas populares</Text>
+        <View style={styles.popularSearches}>
+          <Text style={styles.popularItem}>• Me Mimei - Meme Original</Text>
+          <Text style={styles.popularItem}>• Fim Da Escala 6 X 1?</Text>
+        
+        </View>
+      </View>
     </View>
   );
 };
 
-export default Categorya;
+export default HomeScreen;

@@ -1,41 +1,56 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet} from 'react-native';
 
-const styles = StyleSheet.create({
+export default StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
+    padding: 20,
     justifyContent: 'center',
-    backgroundColor: '#fff',
-    paddingHorizontal: 20,
+    alignItems: 'center',
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 30,
+    marginBottom: 20,
+  },
+  phoneContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+   marginBottom: 20,
+  },
+  searchButton: {
+    color: 'black',
+    fontWeight: 'bold',
+    marginLeft: 8,
+   
+    
+  },
+  countryCode: {
+    padding: 10,
+    backgroundColor: 'white',
+    borderRadius: 5,
+    marginRight: 20,
+    
+   
   },
   input: {
-    width: '100%',
+    flex: 10,
     padding: 10,
     borderWidth: 1,
-    borderColor: '#ddd',
-    borderRadius: 5,
-    marginBottom: 20,
-    fontSize: 16,
+    borderColor: 'black',
+    borderRadius: 10,
   },
-  buttonContainer: {
+  button: {
     width: '100%',
-    marginVertical: 5,
-    color:'black'
+    marginVertical: 10,
+   
   },
   footerText: {
     marginTop: 20,
-    fontSize: 14,
-    color: '#888',
+    fontSize: 16,
+    color: 'black',
   },
   footerLink: {
-    color: '#1a73e8',
+    color: 'blue',
     fontWeight: 'bold',
   },
 });
-
-export default styles;

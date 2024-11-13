@@ -1,33 +1,38 @@
 import React from 'react';
-import { View, Text, TextInput, Button } from 'react-native';
+import { View, Text, TextInput, Button, ImageBackground} from 'react-native';
 import styles from './styles';
-
 const LoginScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Criar conta no TikTok</Text>
-      
-      <TextInput
-        style={styles.input}
-        placeholder="Número de Telefone"
-        placeholderTextColor="#888"
-      />
 
-      <View style={styles.buttonContainer}>
-        <Button title="Continuar com o e-mail" onPress={() => {}} />
+      <View style={styles.phoneContainer}>
+        <View style={styles.countryCode}>
+          <Text>+55</Text>
+        </View>
+        <TextInput
+          style={styles.input}
+          placeholder="Numero de Telefone"
+          placeholderTextColor="black"
+        />
+         
+      </View>
+      <View style={styles.button}>
+      <Button title="Continuar" />
       </View>
 
-    
-      <View style={styles.buttonContainer}>
-        <Button title="Continuar com Facebook" onPress={() => {}} />
+      <View style={styles.button}>
+        <Button title="Continuar com o e-mail" />
+      </View>
+      <View style={styles.button} > 
+        <Button title="Continuar com Facebook" />
+      </View>
+      <View style={styles.button}>
+        <Button title="Continuar com Google" />
       </View>
 
-      <View style={styles.buttonContainer}>
-        <Button title="Continuar com Google" onPress={() => {}} />
-      </View>
-      
       <Text style={styles.footerText}>
-        Já tem conta? <Text style={styles.footerLink}>Entrar</Text>
+        Ja tem conta ? <Text style={styles.footerLink}>Entrar</Text>
       </Text>
     </View>
   );
